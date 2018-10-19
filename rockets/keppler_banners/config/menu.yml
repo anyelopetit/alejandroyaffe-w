@@ -1,0 +1,7 @@
+menu:
+  keppler_banners:
+    name: Keppler Banners
+    current: ['/admin/banners/banners']
+    url_path: /admin/banners/banners
+    icon: layers
+    model: KepplerBanners::Banner
