@@ -1,0 +1,169 @@
+<keppler-view id='index'>
+<keppler-view id='index'>
+<keppler-index>
+  <div class="preloader">
+    <img src="/assets/keppler_frontend/app/7b736a33be802fc2e737e3df56b4ef0e.gif">
+  </div>
+  <nav id="navbar">
+    <div class="toggle-menu">
+      <div class="menu-bar"></div>
+      <div class="menu-bar"></div>
+      <div class="menu-bar"></div>
+    </div>
+    <ul>
+      <li><a href="#home" class="active">Inicio</a></li>
+      <li><a href="#about">Conóceme</a></li>
+      <li><a href="#services">Servicios</a></li>
+      <li><a href="#clients">Clientes</a></li>
+    </ul>
+  </nav>
+  <section id="home">
+    <div class="main-text">
+      <span>A</span>lejandro
+      <span>Y</span>affe
+      <p>
+        Empresario, Facilitador y Actor.
+      </p>
+    </div>
+    <center class="mouse-scroll">
+      <div class="mouse">
+        <div class="scroll"></div>
+      </div>
+    </center>
+  </section>
+  <section id="about">
+    <div class="about">
+      <div class="mask"></div>
+      <img class="avatar center  top-content animate fadeIn" src="/assets/keppler_frontend/app/Foto-Perfil-Alejandro-Yaffe.jpg">
+      <span class="white top-content section-title">Conóceme</span>
+      <p class="description top-content">
+        Consultor en habilidades blandas aplicadas a los contextos laborales y empresariales. Facilitador de cursos y talleres, experto en dinámicas aplicadas a la capacitación en las áreas de Comunicación verbal y no verbal, oratoria, trabajo en equipo, motivación, calidad de servicio, ventas, técnicas antiestrés, prevención de riesgos (campaña cero accidente)
+      </p>
+      <p class="description top-content">
+        Posee gran trayectoria en cursos para empresas como consultor y facilitador de procesos, a través de variadas metodologías participativas e interactivas utilizando transversalmente dinámicas, juegos, risoterapia, representaciones, biodanza, técnicas de  respiración, role playing, entre otros,  favoreciendo así, el aprendizaje significativo.
+      </p>
+      <p class="description top-content">
+        En la actualidad se desempeña como consultor en habilidades blandas facilitando cursos en Santiago y distintos proyectos del Gobierno Regional, en la IV Región.
+        </p>
+    </div>
+  </section>
+  <section id="services">
+    <div class="dark section-title">Servicios</div>
+    <div class="services-container">
+      <div class="service">
+        <img class="service-image" src="/assets/keppler_frontend/app/Risoterapia.jpg">
+        <div class="service-description">
+          <h3 class="service-name">Risoterapia</h3>
+          <p>
+            Alguna descripción
+          </p>
+        </div>
+      </div>
+      <div class="service">
+        <img class="service-image" src="/assets/keppler_frontend/app/Motivación.png">
+        <div class="service-description">
+          <h3 class="service-name">Motivación</h3>
+        </div>
+      </div>
+      <div class="service">
+        <img class="service-image" src="/assets/keppler_frontend/app/Comunicación.png">
+        <div class="service-description">
+          <h3 class="service-name">Comunicación</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+  <% unless @testimonials.blank? %>
+    <section id="testimonials">
+      <div class="dark section-title">Testimonials</div>
+      <div class="testimonials carousel">
+        <div class="control prev"><i class="fa fa-arrow-left"></i></div>
+        <div class="carousel-content">
+          <%- 5.times do |i| -%>
+            <div class="item <%= 'active rotate' if i==0 %>">
+              <div class="item-header">
+                <img class="item-image" src="/assets/keppler_frontend/app/IMG_20180714_123253_215.jpg">
+                <div class="item-quote">
+                  <i class="fa fa-quote-left"></i>
+                  <p>
+                    Hola soy una frase item <%= i %>
+                  </p>
+                  <i class="fa fa-quote-right"></i>
+                </div>
+              </div>
+              <div class="item-footer">
+                <div class="item-info">
+                  <span class="item-name">Anyelo Petit</span>
+                  <small class="item-charge">Back-End Coordinator from SliceGroup</small>
+                </div>
+              </div>
+            </div>
+          <%- end -%>
+        </div>
+        <div class="control next"><i class="fa fa-arrow-right"></i></div>
+      </div>
+    </section>
+  <% end %>
+  <section id="clients">
+  	<div class="dark section-title">Clientes</div>
+		<div class="clients carousel">
+      <div class="control prev"><i class="fa fa-arrow-left"></i></div>
+      <div class="carousel-content">
+        <%- 5.times do |i| -%>
+          <div class="item <%= 'active rotate' if i==0 %>">
+            <img src="/assets/keppler_frontend/app/BCI-SEGUROS-LOGO.jpg">
+          </div>
+        <%- end -%>
+      </div>
+      <div class="control next"><i class="fa fa-arrow-right"></i></div>
+    </div>
+  </section>
+  <section id="contact">
+  	<div class="form">
+      <div class="contact-info">
+        <h2>
+          Contáctame
+        </h2>
+        <p>
+          La mejor terapia para un enfoque laboral
+        </p>
+        <p>
+          <small>
+            Email: contacto@alejandroyaffe.cl
+            <br>
+            Tel: +569 94405623
+          </small>
+        </p>
+        <div class="social-medias">
+          <a href="whatsapp://send?text=&phone=+584143639602">
+          	<i class="fa fa-whatsapp"></i>
+          </a>
+          <a href="https://www.facebook.com/AnyeloPetit96">
+          	<i class="fa fa-facebook"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/anyelopetit">
+          	<i class="fa fa-linkedin"></i>
+          </a>
+          <a href="https://www.github.com/anyelopetit">
+          	<i class="fa fa-github"></i>
+          </a>
+        </div>
+      </div>
+      <form>
+        <label>Nombre</label>
+        <input>
+        <label>Email</label>
+        <input>
+        <label>Asunto</label>
+        <input>
+        <label>Mensaje</label>
+        <textarea></textarea>
+        <input type="submit">
+      </form>
+    </div>
+  <div class="footer">
+    <span>Alejandro Yaffe &reg; - 2018</span>
+  </div>
+  </section>
+</keppler-index>
+</keppler-view>
